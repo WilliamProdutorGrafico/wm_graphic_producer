@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtor Gráfico | William Moraes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="image/logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="logo">William Moraes - Produtor Gráfico</div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#orcamento">Orçamento</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Banners -->
+    <section id="banners">
+        <div class="banner-container">
+            <div class="banner active">
+                <img src="image/BANNER 1.png" alt="Banner 1"> 
+            </div>
+            <div class="banner">
+                <img src="image/BANNER 2.png" alt="Banner 2">
+            </div>
+            <div class="banner">
+                <img src="image/BANNER 3.png" alt="Banner 3">
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </section>
+
+    <section id="home" class="hero">
+        <h1>Transforme suas Ideias em Design</h1>
+        <p>Produção gráfica criativa e de alta qualidade para destacar sua marca.</p>
+        <br>
+        <a href="#orcamento" class="cta-button">Solicite um Orçamento</a>
+    </section>
+
+    <section id="servicos">
+        <h2>Meus Serviços</h2>
+        <div class="servicos-container">
+            <div class="servico">
+                <img src="image/DREAMS AGENCE TRANPARENTE.png" alt="Design de Logotipos">
+                <h3>Design de Logotipos</h3>
+                <p>Criação de logotipos únicos que representam a identidade da sua marca.</p>
+                <p class="preco">Preço: R$ 450</p>
+            </div>
+            <div class="servico">
+                <img src="image/Fye-empresa.png" alt="Materiais Impressos">
+                <h3>Materiais Impressos</h3>
+                <p>Design de cartões de visita, panfletos e outros materiais gráficos.</p>
+                <p class="preco">Preço: R$ 250</p>
+            </div>
+            <div class="servico">
+                <img src="image/sitee.png" alt="Web Design">
+                <h3>Web Design</h3>
+                <p>Criação de sites responsivos e visualmente atraentes.</p>
+                <p class="preco">Preço: R$ 900</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Meu Portfólio</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="image/logooo-preto.png" alt="Projeto 1">
+                <p>Projeto de Logotipo</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="image/envelope.png" alt="Projeto 2">
+                <p>Material Promocional</p>
+            </div>
+            <div class="portfolio-item box-3">
+                <img src="image/app.png" alt="Projeto 3">
+                <p>Design de aplicativo</p>
+            </div>
+            <div class="item box-3">
+        </div>
+    </section>
+
+    <section id="orcamento">
+        <h2>Solicite um Orçamento</h2>
+        <form id="orcamento-form">
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <input type="tel" placeholder="Telefone" required>
+            <textarea placeholder="Descrição do projeto" required></textarea>
+            <div>
+                <label for="servico-select">Selecione um Serviço:</label>
+                <select id="servico-select" required>
+                    <option value="">--Selecione--</option>
+                    <option value="450">Design de Logotipos</option>
+                    <option value="250">Materiais Impressos</option>
+                    <option value="900">Web Design</option>
+                </select>
+            </div>
+            <p id="orcamento-valor">Valor aproximado: R$ 0</p>
+            <button type="submit">Enviar Orçamento</button>
+        </form>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form id="contato-form">
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 William Moraes. Todos os direitos reservados.</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/wm_grafhicproducer/" target="_blank">Instagram</a>
+            <a href="https://wa.me/5511948679046" target="_blank">Whatsapp</a>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
